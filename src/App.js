@@ -30,16 +30,16 @@ function App() {
             {/* <p>Creative and ambitious UI Architect looking to make a difference and play an important role in the software development life cycle</p> */}
           </div>
         </div>
-        <div className="App-doc-padding-block" style={{paddingTop: 0, paddingBottom: 0, display: "flex", flexDirection: "row", justifyContent: "space-between", background: "#F5F4F4"}}>
+        <div className="App-doc-contact-info">
           <div style={{display: "flex", flexDirection: "column"}}>
-            <span><Icon path={mdiEmail} size={'3vmin'} color={'#0687B2'}/>jgramugl@gmail.com</span>
-            <span><Icon path={mdiCellphone} size={'3vmin'} color={'#0687B2'}/>(201) 874-0138</span>
-            <span><Icon path={mdiMapMarker} size={'3vmin'} color={'#0687B2'}/>Caldwell, NJ</span>
+            <span><Icon path={mdiEmail} size={'2vmax'} color={'#0687B2'}/>jgramugl@gmail.com</span>
+            <span><Icon path={mdiCellphone} size={'2vmax'} color={'#0687B2'}/>(201) 874-0138</span>
+            <span><Icon path={mdiMapMarker} size={'2vmax'} color={'#0687B2'}/>Caldwell, NJ</span>
           </div>
           <div style={{display: "flex", flexDirection: "column"}}>
-            <span><Icon path={mdiEarth} size={'3vmin'} color={'#0687B2'}/>jgramugl.github.io</span>
-            <span><Icon path={mdiGithub} size={'3vmin'} color={'#0687B2'}/>github.com/jgramugl</span>
-            <span><Icon path={mdiLinkedin} size={'3vmin'} color={'#0687B2'}/>linkedin.com/in/joseph-gramuglia</span>
+            <span><Icon path={mdiEarth} size={'2vmax'} color={'#0687B2'}/>jgramugl.github.io</span>
+            <span><Icon path={mdiGithub} size={'2vmax'} color={'#0687B2'}/>github.com/jgramugl</span>
+            <span><Icon path={mdiLinkedin} size={'2vmax'} color={'#0687B2'}/>linkedin.com/in/joseph-gramuglia</span>
           </div>
         </div>
         <div className="App-doc-padding" style={{paddingTop: 0}}>

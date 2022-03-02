@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 2vmax);
   color: white;
 }
 
@@ -29,79 +29,78 @@
 }
 
 .App-doc-padding {
-  padding: 2.54cm; /*1 inch*/
+  padding: 5vmax;
 }
 
-.App-doc-padding-block {
-  padding: 2.54cm; /*1 inch*/
+.App-doc-contact-info {
+  padding: 5vmax;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #F5F4F4;
 }
 
 @media print {
-
   .App-doc-padding {
     padding: 0;
   }
-
-  .App-doc-padding-block {
-    padding: 1.252cm; /*1 inch*/
-  }
-
 }
 
 .App-resume {
   position: absolute;
   top: 0;
-  min-height: 100vh;
+  min-height: 100vmax;
   width: 100%;
-  /* background-color: red; */
 }
 
 .App-resume h1 {
-  font-size: calc(14px + 2vmin);
-  margin: 1vmin 0;
+  font-size: 2vmax;
+  margin: 0.5vmax 0;
   margin-top: 0;
 }
 
 .App-resume h2 {
-  font-size: calc(2px + 2vmin);
-  margin: 0.85vmin 0;
+  font-size: 1.75vmax;
+  margin: 0.5vmax 0;
 }
 
 .App-resume div {
-  font-size: calc(0px + 2vmin);
+  font-size: 1.5vmax;
   margin: 0;
 }
 
 .App-resume p {
-  font-size: calc(0px + 2vmin);
+  font-size: 1.5vmax;
   margin: 0;
-  margin-top: 1vmin;
+  margin-top: 1vmax;
 }
 
 .App-resume ul {
-  font-size: calc(0px + 2vmin);
+  font-size: 1.5vmax;
   margin: 0;
 }
 
 .App-resume span {
-  font-size: calc(0px + 2vmin);
-  margin: calc(0px + 0.25vmin) 0;
+  font-size: 1.5vmax;
+  margin: 0.25vmax 0;
   display: flex;
   align-items: center;
 }
 
 .App-resume button {
-  font-size: calc(0px + 2vmin);
-  margin: 0 5px;
+  font-size: 1.5vmax;
+  margin: 0.5vmax;
   border-width: 0;
   border-radius: 5px;
   background-color: #60D4FB;
   box-shadow: none;
-  padding: 5px 10px;
+  padding: 0.5vmax 1vmax;
 }
 
 .App-resume-card {
-  margin: 2vmin 0;
+  margin: 2vmax 0;
 }
 
 @keyframes App-logo-spin {
