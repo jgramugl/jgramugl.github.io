@@ -33,18 +33,26 @@
 }
 
 .App-doc-contact-info {
-  padding: 5vmax;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0.25vmax 5vmax;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: #F5F4F4;
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari, Edge */
+  color-adjust: exact !important;                 /*Firefox*/
 }
 
 @media print {
   .App-doc-padding {
     padding: 0;
+  }
+
+  .App-doc-contact-info {
+    border-radius: 10px;
+  }
+
+  .print-hide {
+    display: none;
   }
 }
 
@@ -80,6 +88,17 @@
 .App-resume ul {
   font-size: 1.5vmax;
   margin: 0;
+  padding-inline-start: 2vmax;
+}
+
+.App-resume li {
+  padding-inline-start: 1vmax;
+}
+
+.App-resume li::marker {
+  content: "\268A";
+  color: #0687B2;
+  font-weight: 900;
 }
 
 .App-resume span {
@@ -89,7 +108,7 @@
   align-items: center;
 }
 
-.App-resume button {
+.App-skill {
   font-size: 1.5vmax;
   margin: 0.5vmax;
   border-width: 0;
@@ -97,10 +116,14 @@
   background-color: #60D4FB;
   box-shadow: none;
   padding: 0.5vmax 1vmax;
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari, Edge */
+  color-adjust: exact !important;                 /*Firefox*/
 }
 
-.App-resume-card {
-  margin: 2vmax 0;
+.print-button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 @keyframes App-logo-spin {

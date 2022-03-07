@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Icon from '@mdi/react'
-import { mdiEmail, mdiCellphone, mdiMapMarker, mdiEarth, mdiGithub, mdiLinkedin } from '@mdi/js'
+import { mdiEmail, mdiCellphone, mdiMapMarker, mdiEarth, mdiGithub, mdiLinkedin, mdiOpenInNew, mdiPrinter } from '@mdi/js'
 
 function App() {
   return (
@@ -25,7 +25,10 @@ function App() {
         <div className="App-doc-padding" style={{paddingBottom: 0}}>
           {/* <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "baseline"}}> */}
           <div>
-            <h1>Joseph Gramuglia</h1>
+            <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+              <h1>Joseph Gramuglia</h1>
+              <button className='print-button print-hide' onClick={()=>{window.print()}}><Icon path={mdiPrinter} size={'2vmax'} color={'#0687B2'}/></button>
+            </div>
             <h2>UI Architect</h2>
             {/* <p>Creative and ambitious UI Architect looking to make a difference and play an important role in the software development life cycle</p> */}
           </div>
@@ -44,19 +47,19 @@ function App() {
         </div>
         <div className="App-doc-padding" style={{paddingTop: 0}}>
           <h2>TECHNICAL SKILLS</h2>
-          <button type="button">C++</button>
-          <button type="button">C#</button>
-          <button type="button">SQL</button>
-          <button type="button">WPF</button>
-          <button type="button">Java</button>
-          <button type="button">Python</button>
-          <button type="button">JavaScript</button>
-          <button type="button">NodeJs</button>
+          <button className='App-skill'>C++</button>
+          <button className='App-skill'>C#</button>
+          <button className='App-skill'>SQL</button>
+          <button className='App-skill'>WPF</button>
+          <button className='App-skill'>Java</button>
+          <button className='App-skill'>Python</button>
+          <button className='App-skill'>JavaScript</button>
+          <button className='App-skill'>NodeJs</button>
           <h2>EXPERIENCE</h2>
           <div className="App-resume-card">
             <p><b>UI Architect</b></p>
             <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", margin: 0}}>
-              <div>BondXN</div>
+              <div>BondXN <a href="https://bondxn.com/" target="_blank" rel="noreferrer"><Icon path={mdiOpenInNew} size={'1.25vmax'} color={'#0687B2'}/></a></div>
               <div>04/2019 - Present</div>
             </div>
             <ul>
@@ -71,7 +74,7 @@ function App() {
           <div className="App-resume-card">
             <p><b>Full Stack Software Developer</b></p>
             <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", margin: 0}}>
-              <div>DeltaBlaze</div>
+              <div>DeltaBlaze <a href="https://www.deltablaze.com/site/index.html" target="_blank" rel="noreferrer"><Icon path={mdiOpenInNew} size={'1.25vmax'} color={'#0687B2'}/></a></div>
               <div>01/2017 - 03/2019</div>
             </div>
             <ul>
@@ -85,7 +88,7 @@ function App() {
           <div className="App-resume-card">
             <p><b>Software Developer</b></p>
             <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", margin: 0}}>
-              <div>UPS</div>
+              <div>United Parcel Service <a href="https://www.ups.com/us/en/Home.page" target="_blank" rel="noreferrer"><Icon path={mdiOpenInNew} size={'1.25vmax'} color={'#0687B2'}/></a></div>
               <div>08/2016 - 11/2016</div>
             </div>
             <ul>
